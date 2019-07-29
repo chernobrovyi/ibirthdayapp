@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		B60C5A3922EDCFC40061785A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C5A3822EDCFC40061785A /* AppDelegate.swift */; };
-		B60C5A3B22EDCFC40061785A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C5A3A22EDCFC40061785A /* ViewController.swift */; };
+		B60C5A3B22EDCFC40061785A /* AddBirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C5A3A22EDCFC40061785A /* AddBirthdayViewController.swift */; };
 		B60C5A3E22EDCFC40061785A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60C5A3C22EDCFC40061785A /* Main.storyboard */; };
 		B60C5A4122EDCFC40061785A /* BirthdayTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B60C5A3F22EDCFC40061785A /* BirthdayTracker.xcdatamodeld */; };
 		B60C5A4322EDCFC50061785A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B60C5A4222EDCFC50061785A /* Assets.xcassets */; };
 		B60C5A4622EDCFC50061785A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60C5A4422EDCFC50061785A /* LaunchScreen.storyboard */; };
+		B64E6D7E22EF5DB1008D32B4 /* Birthday.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64E6D7D22EF5DB1008D32B4 /* Birthday.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B60C5A3522EDCFC40061785A /* BirthdayTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirthdayTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B60C5A3822EDCFC40061785A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B60C5A3A22EDCFC40061785A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B60C5A3A22EDCFC40061785A /* AddBirthdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBirthdayViewController.swift; sourceTree = "<group>"; };
 		B60C5A3D22EDCFC40061785A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B60C5A4022EDCFC40061785A /* BirthdayTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BirthdayTracker.xcdatamodel; sourceTree = "<group>"; };
 		B60C5A4222EDCFC50061785A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B60C5A4522EDCFC50061785A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B60C5A4722EDCFC50061785A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B64E6D7D22EF5DB1008D32B4 /* Birthday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Birthday.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				B60C5A3822EDCFC40061785A /* AppDelegate.swift */,
-				B60C5A3A22EDCFC40061785A /* ViewController.swift */,
+				B60C5A3A22EDCFC40061785A /* AddBirthdayViewController.swift */,
 				B60C5A3C22EDCFC40061785A /* Main.storyboard */,
 				B60C5A4222EDCFC50061785A /* Assets.xcassets */,
 				B60C5A4422EDCFC50061785A /* LaunchScreen.storyboard */,
 				B60C5A4722EDCFC50061785A /* Info.plist */,
 				B60C5A3F22EDCFC40061785A /* BirthdayTracker.xcdatamodeld */,
+				B64E6D7D22EF5DB1008D32B4 /* Birthday.swift */,
 			);
 			path = BirthdayTracker;
 			sourceTree = "<group>";
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B60C5A3B22EDCFC40061785A /* ViewController.swift in Sources */,
+				B64E6D7E22EF5DB1008D32B4 /* Birthday.swift in Sources */,
+				B60C5A3B22EDCFC40061785A /* AddBirthdayViewController.swift in Sources */,
 				B60C5A4122EDCFC40061785A /* BirthdayTracker.xcdatamodeld in Sources */,
 				B60C5A3922EDCFC40061785A /* AppDelegate.swift in Sources */,
 			);
