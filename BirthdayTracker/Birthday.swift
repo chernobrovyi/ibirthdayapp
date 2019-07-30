@@ -12,11 +12,11 @@ class Birthday {
     
     let firstName : String
     let lastName : String
-    let birthday : Date
+    let birthdate : Date
     
-    init(firstName : String, lastName : String, birthday : Date) {
+    init(firstName : String, lastName : String, birthdate : Date) {
         self.firstName = firstName
         self.lastName = lastName
-        self.birthday = birthday
+        self.birthdate = birthdate
     }
 }

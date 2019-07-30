@@ -1,12 +1,13 @@
 //
-//  ViewController.swift
-//  BirthdayTracker
-//
 //  Created by Valeriy Chernobrovyi on 28/07/2019.
 //  Copyright © 2019 Valeriy Chernobrovyi. All rights reserved.
 //
 
 import UIKit
+
+protocol AddBirthdayViewControllerDelegate {
+    func addBirthdayViewController(_ addBirthdayViewController: AddBirthdayViewController, didAddBirthday birthday: Birthday)
+}
 
 class AddBirthdayViewController: UIViewController {
     
@@ -14,6 +15,8 @@ class AddBirthdayViewController: UIViewController {
     @IBOutlet var firstNameTextField: UITextField!
     @IBOutlet var lastNameTextField: UITextField!
     @IBOutlet var birthdatePicker: UIDatePicker!
+    
+    var delegate: AddBirthdayViewControllerDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,9 +30,11 @@ class AddBirthdayViewController: UIViewController {
         
         let firstName = firstNameTextField.text ?? ""
         let lastName = lastNameTextField.text ?? ""
-        let birthday = birthdatePicker.date
+        let birthdate = birthdatePicker.date
         
-        let newBirthday = Birthday(firstName: firstName, lastName: lastName, birthday: birthday)
+        let newBirthday = Birthday(firstName: firstName, lastName: lastName, birthdate: birthdate)
+        delegate?.addBirthdayViewController(self, didAddBirthday: newBirthday)
+        dismiss(animated: true, completion: nil)
         
         print("Создана запись о дне рождения!")
         print("Имя: \(newBirthday.firstName),")
